@@ -1,0 +1,167 @@
+/*This page have css of "feed.js" page */
+*{
+    color: chocolate;
+}
+.video{
+    
+   height: 80%;
+   width: 50%;
+}
+
+.shorts{
+    background-color: #302321;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+   
+    
+  
+}
+
+.comments{
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    right: -60px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    padding: 3%;
+   
+}
+.commentAll{
+    overflow-y: scroll;
+    scrollbar-width: none; /* For Firefox */
+    height: 380px;
+}
+.commentAll::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+.commentForm{
+   width: 100%;
+   position: absolute;
+   bottom: -10px;
+   background-color: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+#comment{
+    width: 90%;
+    background-color: transparent;
+    outline: none;
+    
+
+}
+.upload{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 40%;
+
+  
+}
+
+.upload > input{
+    width: 50%;
+    height: 25px;
+    border-radius: 10px ;
+}
+.upload > button{
+    width: 50%;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #302321;
+    border: 2px solid chocolate ; 
+    margin-bottom: 30px;
+    
+}
+
+.upload > button:hover{
+    background-color: #372f2d;
+}
+
+.short{
+    width: 30%;
+    margin: auto;
+    box-shadow: 0 2px 8px 0 rgba(229, 207, 207, 0.2), 0 4px 20px 0 rgba(250, 243, 243, 0.19);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    height: 500px;
+   
+   
+}
+
+.name-title{
+    position: absolute;
+    left: 7%;
+    top: 5%;
+}
+
+.like-comment{
+    position: absolute;
+   
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    left:10%;
+    
+    bottom: 5%;
+    color: rgb(34, 32, 31);
+   
+}
+
+.like-comment > p{
+    
+    margin: 10px;
+}
+
+
+@media screen and (max-width:440px) {
+    .short{
+        width: 90%;
+    }
+
+    .upload > input{
+        width: 90%;
+       
+    }
+    .upload > button{
+        width: 90%;
+       
+    }
+}
+
+@media screen and (max-width:840px) {
+    .short{
+        width: 90%;
+    }
+    .upload > input{
+        width: 90%;
+       
+    }
+    .upload > button{
+        width: 90%;
+       
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .short{
+        width: 70%;
+    }
+    .upload > input{
+        width: 90%;
+       
+    }
+    .upload > button{
+        width: 90%;
+       
+    }
+}

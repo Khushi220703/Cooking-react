@@ -1,0 +1,44 @@
+.headerNav{
+    font-weight: 700;
+    font-size: medium;
+}
+
+.headerNav:hover{
+    border-bottom: 3px solid #e09616;
+}
+
+.header {
+    background-color: #302321;
+    height: 60px;
+    margin-top:0px;
+    display: flex;
+    justify-content: space-between;
+    color:#e09616;
+    font-family: Cursive System;
+    position:fixed;
+    top:0px;
+    width: 100%;
+}
+.logo{
+
+    margin:"40px";
+    font-family: Cursive, System
+}
+
+.lists  {
+   display:flex;
+   margin:20px;
+   list-style-type:none
+
+   
+}
+ .list  {
+    margin-right:10px
+    
+}
+
+@media screen  and (max-width:440){
+ .lists{
+   justify-content: flex-start;
+ }
+}

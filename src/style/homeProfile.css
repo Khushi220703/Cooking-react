@@ -1,0 +1,289 @@
+/*This page contain the css for "homePage.js*/
+:root{
+    --brown: #302321;
+    --caramel: #e09616;
+    --lighBrown:#583e3a;
+}
+.homePage{
+    background-color:rgb(252, 235, 213);
+    width: 100%;
+    height: 1000px;
+}
+.home{
+  
+   
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 220px 500px 100px;
+    grid-gap: 40px;
+    grid-template-areas: "shoping-list post post suggestions";
+    padding: 20px;
+    padding-top: 80px;
+
+}
+
+
+/* Css for the  shooping list for*/
+.shoping-list{
+        grid-area: shoping-list;
+        background-color: var(--brown);
+        height: max-content;
+        border-radius: 6px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+}
+/*Css for empty shopping list*/
+.empty{
+    margin: 10px;
+}
+
+.empty > img{
+    width: 200px;
+    height: 200px;
+}
+.empty > h1{
+    color: var(--caramel);
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+   
+}
+
+.Link > button{
+    width: 95%;
+    height: 40px;
+    margin: 5px;
+    background-color: var(--brown);
+    border: 2px solid var(--caramel);
+    color: var(--caramel);
+}
+
+.empty > button:hover{
+    background-color: var(--lighBrown);
+}
+
+/* Css when shopping list have items*/
+.shoppingList > h1{
+    color: var(--caramel);
+    font-size: larger;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.shoppingList > ol{
+    color: var(--caramel);
+}
+
+.shoppingList > .items{
+    color: var(--caramel);
+    margin: 20px;
+
+}
+
+.Link > button{
+    width: 95%;
+    height: 40px;
+    margin: 5px;
+    background-color: var(--brown);
+    border: 2px solid var(--caramel);
+    color: var(--caramel);
+}   
+
+.Link > button:hover{
+    background-color: var(--lighBrown);
+    border:2px solid  var(--caramel);
+    color: var(--caramel);
+}
+
+.removeItem{
+    width: 85%;
+    height: 40px;
+    margin: 5px;
+    background-color: var(--brown);
+    border: 2px solid var(--caramel);
+    color: var(--caramel);
+}   
+
+.removeItem:hover{
+    background-color: var(--lighBrown);
+}
+
+/* CSS for post section */
+.post{
+    grid-area: post;
+    background-color: var(--brown);
+    color: var(--caramel);
+    height: 700px;
+    border-radius: 6px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.post1{
+    border-top: 2px solid var(--caramel);
+    border-bottom: 2px solid var(--caramel);
+}
+
+.like-Comment{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding:0x;
+   
+}
+
+.post-head{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.Link > button{
+    background-color: var(--caramel);
+    color: var(--brown);
+    font-weight: 600;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+   
+}
+.post-head > div{
+    margin: 10px;
+    font-weight: 600;
+}
+.video{
+    width: 100%;
+    background-color: transparent;
+   
+}
+img{
+  width: 550px;
+ 
+  margin: 5%;
+
+}
+
+/* CSS for suggestion section. */
+.suggestions{
+    grid-area: suggestions;
+    background-color: var(--brown);
+    height: 800px;
+    border-radius: 6px;
+    color: var(--caramel);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: justify;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.suggestions > h1{
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 20px;
+ 
+   
+}
+
+.dish{
+    border: 2px solid var(--caramel);
+    width: 90%;
+    height: 55%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.dish > img{
+    border-radius: 10px;
+    width: 90%;
+}
+
+.dishDetail{
+    padding: 10px;
+}
+
+.clickHere{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dishDetail > button{
+    width: 95%;
+    height: 40px;
+    margin: 5px;
+    background-color: var(--brown);
+    border: 2px solid var(--caramel);
+    color: var(--caramel);
+}   
+
+.dishDetail > button:hover{
+    background-color: var(--lighBrown);
+} 
+
+@media screen  and (max-width:440px){
+    .home{
+        
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+    video{
+        width: 90%;
+        margin: 5px;
+      
+      }
+    .suggestions{
+        height: max-content;
+    }
+
+    .video > img{
+        width: 90%;
+    }
+
+    
+}
+
+@media screen  and (min-width:441px) and (max-width:840px){
+   
+        .home{
+        
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+        video{
+            width: 90%;
+            margin: 5px;
+          
+          }
+        .suggestions{
+            height: max-content;
+        }
+    
+}
+
+@media screen  and (max-width:1240px){
+    .home{
+        
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+        
+    }
+    .suggestionsList{
+      height: fit-content;
+    }
+
+    
+}

@@ -1,0 +1,113 @@
+/* This page contain the css of addDish page */
+*{
+    color: #e09616;
+}
+form{
+    margin: auto;
+    width: 40%;
+    margin-top: 100px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+
+}
+
+form > img{
+    width: 150px;height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -150px;
+    left: 230px;
+}
+form > h1{
+    text-align: center;
+    color: #e09616;
+}
+
+form > label{
+    color: chocolate;
+}
+
+form > input[type=text]{
+    width: 500px;
+    border: none;
+    border-bottom: 4px solid chocolate;
+}
+
+form > input[type=radio]{
+    margin: 3px;
+    color: #e09616;
+   
+}
+
+form > button{
+    width:100%;
+    margin:auto;
+    margin-bottom:20px;
+    height:30px;
+    border:2px solid brown;
+    background-color:#e09616;
+    font-size:large;
+    font-weight:600;
+    color:brown;
+    border-radius:3px;
+    margin-top: 20px;
+}
+
+@media screen  and (max-width:440px){
+    form{
+        width: 80%;
+      margin-left: 2%;
+    }
+
+    form > input[type=text]{
+        width: 90%;
+    }
+
+    textarea{
+        width: 90%;
+    }
+
+    form > img{
+        left: 100px;
+    }
+}
+
+@media screen  and (max-width:840px){
+    form{
+        width: 80%;
+      margin-left: 2%;
+    }
+
+    form > input[type=text]{
+        width: 90%;
+    }
+
+    textarea{
+        width: 90%;
+    }
+
+    form > img{
+        left: 40%;
+    }
+}
+
+@media screen  and (max-width:1240px){
+    form{
+        width: 80%;
+      margin-left: 2%;
+    }
+
+    form > input[type=text]{
+        width: 90%;
+    }
+
+    textarea{
+        width: 90%;
+    }
+
+    form > img{
+        left: 40%;
+    }
+}

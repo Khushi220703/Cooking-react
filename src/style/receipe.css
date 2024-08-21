@@ -1,0 +1,323 @@
+
+:root{
+    --brown: #302321;
+    --caramel: #e09616;
+    --lighBrown:#583e3a;
+}
+*{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+/*styling the top image part of the reciepe page*/
+.image{
+  width: 100%;
+  position: relative;
+  top: -80px;
+  left: -80px;
+
+}
+
+.image-cover{
+    position: absolute;
+    background-color: var(--brown);
+    opacity: 0.3;
+    width: 100%;
+    height: 500px;
+   
+    top: 0px;
+
+}
+
+.image-text{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0px;
+    color: var(--caramel);
+    
+}
+
+.image-text > h1{
+    margin: 20px;
+    display: inline;
+}
+
+.image-text > h3{
+  position: relative;
+  top: -30px;
+   text-align: end;
+   margin: 10px;
+}
+
+.image-text > h2{
+    text-align: center;
+   font-size: xx-large;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin: -35px;
+}
+
+.image-text > input{
+    width: 30%;
+    margin: auto;
+    margin-left: 540px;
+    margin-top: 40px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+/*decorating the filter part of receipe page*/
+
+.receipes{
+    background-color:  rgb(243, 232, 218);
+    height: max-content;
+    display: grid;
+    grid-template-columns: 220px auto;
+    grid-gap: 50px;
+    grid-template-areas: "filter receipeList";
+    position: relative;
+    top: -150px;
+   padding: 50px;
+}
+
+.filter{
+    grid-area: filter;
+    background-color: var(--brown);
+    height: max-content;
+    border-radius: 10px;
+    color: var(--caramel);
+    padding: 20px;
+}
+
+p{
+    text-align: center;
+   
+    margin: 5px;
+    padding: 1px;
+
+}
+
+.allFilter{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--caramel);
+    padding: 5px;
+}
+.dishCategory{
+    margin: 10px;
+}
+.dishCuisine{
+    margin: 10px;
+}
+
+.lunch{
+    margin: 5px;
+}
+
+.dishType{
+    margin: 5px;
+}
+
+.receipeList{
+    grid-area: receipeList;
+    background-color: var(--brown);
+    height: max-content;
+    border-radius: 10px;
+    
+    
+}
+
+.receipeName{
+    margin: 10px;
+    padding: 5px;
+    color: var(--caramel);
+    font-size: x-large;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1px;
+    padding: 2px;
+}
+.dish-type{
+    text-align: left;
+    font-size: x-large;
+    margin: 40px;
+    padding: 5px;
+    color: var(--caramel);
+}
+.receipe-box{
+    width: 300px;
+    height: 150px;
+    background-color: beige;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.receipe-box > img{
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+    position: absolute;
+    top: -40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 38px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.details{
+    position: relative;
+    top: 90px;
+    color: var(--caramel);
+}
+
+
+@media screen and (max-width:440px) {
+    .image{
+        width: 300px;
+        position: relative;
+        left: -20px;
+    }
+    .image-text > h3{
+        text-align: center;
+        top: -5px;
+    }
+
+    .image-text > h2{
+       display: none;
+    }
+
+    .image-text > input{
+       margin-left: 60px;
+       margin-top: -10px;
+       width: 200px;
+       height: 25px;
+    }
+
+    .receipes{
+       
+       display: flex;
+       flex-direction: column;
+       padding: 5px;
+        
+    }
+   .receipeList{
+            width: 90%;
+            margin: 15px;
+            
+            
+           
+    }
+
+    .dishCategory{
+        display: flex;
+        margin: 2%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .dishCuisine{
+        display: flex;
+        margin: 2%;
+        padding: 2%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .lunch{
+        display: flex;
+        margin: 2%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    
+    .receipe-box{
+        width: 250px;
+        
+    }
+    
+    .receipe-box > img{
+        
+        width: 90%;
+        height: 120px;
+        margin: 10px;
+        position: absolute;
+        top: -40px;
+        border-radius: 5px;
+        box-shadow: 0 4px 38px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+    }
+
+   
+    
+}
+
+@media screen and (min-width:441px) and (max-width:840px) {
+   .image{
+    width: 100%;
+    position: relative;
+    left: -40px;
+   }
+    .image-text > h3{
+        text-align: center;
+        top: -5px;
+    }
+
+    .image-text > h2{
+       display: none;
+    }
+
+    .image-text > input{
+       margin-left: 60px;
+       margin-top: -10px;
+       width: 200px;
+       height: 25px;
+    }
+
+    .receipes{
+       
+       display: flex;
+       flex-direction: column;
+       padding: 25px;
+       
+        
+    }
+   .box{
+    flex-direction: row;
+    
+   }
+    .dishCategory{
+        display: flex;
+        margin: 2%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .dishCuisine{
+        display: flex;
+        margin: 2%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .lunch{
+        display: flex;
+        margin: 2%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+   
+    .receipe-box{
+        width: 95%;
+        margin-right: 10px;
+        
+    }
+    .receipe-box > img{
+        width: 90%;
+    }
+}

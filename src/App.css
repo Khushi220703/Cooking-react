@@ -1,0 +1,83 @@
+*{
+  margin: 0px;;
+}
+.landingPage{
+  background-image: url("./images/lp1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 730px;
+  filter: brightness(100%);
+  margin: 0px;
+}
+
+.contentStyle {
+  color:white;
+  width:50%;
+  margin:auto;
+  margin-top: 150px;
+  text-align:center;
+}
+
+dl{
+  margin: 2%;
+  padding: 2%;
+}
+
+/*otp*/
+
+
+
+/* making landing page responsive for mobile */
+
+@media screen  and (max-width:440px){
+  .landingPage{
+    height:930px;
+  }
+  .contentStyle{
+ 
+ 
+   margin: auto;
+   width: 90%;
+   font-size: large;
+   margin-top: 100px;
+
+  }
+  
+}
+
+@media screen  and (max-width:840px){
+  .landingPage{
+    height:1150px;
+  }
+  .contentStyle{
+ 
+ 
+   margin: auto;
+   width: 95%;
+   font-size: large;
+   margin-top: 250px;
+
+  }
+  
+}
+
+@media screen  and (max-width:1240px){
+  .landingPage{
+    height:800px;
+  }
+  .contentStyle{
+ 
+ 
+   margin: auto;
+   width: 95%;
+   font-size: large;
+   margin-top: 250px;
+
+  }
+  
+}
+
+
+
