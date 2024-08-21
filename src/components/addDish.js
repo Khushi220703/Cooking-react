@@ -64,7 +64,7 @@ const AddDish = () => {
         
         console.log(formData);
         
-        const response = await axios.post("https://cooking-api-uwid.onrender.com/api/food/recipes", formData, {
+        const response = await axios.post("https://cooking-api-0h0k.onrender.com/api/food/recipes", formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }

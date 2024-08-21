@@ -12,7 +12,7 @@ const Receipes = (props) => {
     const getData = async () => {
         setLoader(true);
         try {
-            const response = await fetch(`https://cooking-api-uwid.onrender.com/api/food/search/${id}`);
+            const response = await fetch(`https://cooking-api-0h0k.onrender.com/api/food/search/${id}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

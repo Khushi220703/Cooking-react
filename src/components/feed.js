@@ -35,7 +35,7 @@ const Feed = () => {
     if (title && video) {
       setLoader(true);
       try {
-        await axios.post('https://cooking-api-uwid.onrender.com/api/feed/feeds', formData, {
+        await axios.post('https://cooking-api-0h0k.onrender.com/api/feed/feeds', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
@@ -56,7 +56,7 @@ const Feed = () => {
   // handle all teh requets for display all the reels.
   const getVideos = async () => {
     try {
-      const response = await fetch('https://cooking-api-uwid.onrender.com/api/feed/receipess');
+      const response = await fetch('https://cooking-api-0h0k.onrender.com/api/feed/receipess');
       const data = await response.json();
       setRecipes(data);
     } catch (error) {
@@ -73,7 +73,7 @@ const Feed = () => {
     const likeData = { id, userId };
 
     try {
-      const response = await axios.post('https://cooking-api-uwid.onrender.com/api/feed/like', likeData);
+      const response = await axios.post('https://cooking-api-0h0k.onrender.com/api/feed/like', likeData);
       const updatedRecipe = response.data.recipe;
 
       // Update like state
@@ -99,7 +99,7 @@ const Feed = () => {
     const userId = sessionStorage.getItem('userId');
 
     try {
-      const response = await axios.post('https://cooking-api-uwid.onrender.com/api/feed/comment', { comment, id, userName, userId });
+      const response = await axios.post('https://cooking-api-0h0k.onrender.com/api/feed/comment', { comment, id, userName, userId });
       console.log(response.data);
       setComment('');
       // Optionally, update comments in state if needed

@@ -41,7 +41,7 @@ const Signup = () => {
                 try {
                     
                     
-                    const response = await axios.post("https://cooking-api-uwid.onrender.com/api/user/sendotp", {email});
+                    const response = await axios.post("https://cooking-api-0h0k.onrender.com/api/user/sendotp", {email});
                         console.log(response);
 
                        

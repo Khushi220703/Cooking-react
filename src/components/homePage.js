@@ -37,7 +37,7 @@ const HomePage = (props) => {
         setLoader(true);
         try {
 
-            const reponse = await fetch("https://cooking-api-uwid.onrender.com/api/food/receipe");
+            const reponse = await fetch("https://cooking-api-0h0k.onrender.com/api/food/receipe");
             const data = await reponse.json();
             setReceipe(data);
 

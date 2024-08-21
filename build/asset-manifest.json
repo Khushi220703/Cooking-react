@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.be64e929.css",
+    "main.js": "/static/js/main.b509cf91.js",
+    "static/js/453.9ed6bfb0.chunk.js": "/static/js/453.9ed6bfb0.chunk.js",
+    "static/media/cooking.mp4": "/static/media/cooking.8cc3daba369286fa42cc.mp4",
+    "static/media/shorts.mp4": "/static/media/shorts.143d346c92ec1d64c30b.mp4",
+    "static/media/thali.gif": "/static/media/thali.952b6d32e25822b44347.gif",
+    "static/media/food1.gif": "/static/media/food1.6ead88e91a9dbee2788c.gif",
+    "static/media/burger.jpg": "/static/media/burger.a7ecb73f16ce6657b852.jpg",
+    "static/media/rabbit.gif": "/static/media/rabbit.7bd2c90875c6442e1e8e.gif",
+    "static/media/cooking.gif": "/static/media/cooking.19ef6e1b4048142e7dc1.gif",
+    "static/media/food3.gif": "/static/media/food3.ad447c3461817f52ea96.gif",
+    "static/media/lp1.jpg": "/static/media/lp1.9f1314ed0d98f07bd62d.jpg",
+    "index.html": "/index.html",
+    "main.be64e929.css.map": "/static/css/main.be64e929.css.map",
+    "main.b509cf91.js.map": "/static/js/main.b509cf91.js.map",
+    "453.9ed6bfb0.chunk.js.map": "/static/js/453.9ed6bfb0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be64e929.css",
+    "static/js/main.b509cf91.js"
+  ]
+}
